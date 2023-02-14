@@ -44,14 +44,44 @@ body{
 .hero nav a:hover{
     background-color: #000000c5;
 }
+.hero-content p{
+    background-color: #00000088;
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.658);
+}
 main{
     width: 80%;
     margin: auto;
 }
 .content-section{
     background-color:white;
-    padding: 15px;
+    padding: 10px;
     margin-top: 15px;
+    overflow: auto;
+}
+.card{
+    width: 32%;
+    float: left;
+   
+    box-sizing: border-box;
+    
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+.card-1,.card-2{
+    margin-right: 2%;
+}
+.card p{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
     
 }
 article h2{
