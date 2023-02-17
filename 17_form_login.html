@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos">
+    <meta name="description" content="Aplicações basicas para CSS">
+    <meta name="keywords" content="CSS, tecnologia">
+    <style>
+        .formLogin{
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .formLogin label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .formLogin fieldset{
+            background-color: #ccc;
+        }
+        .formLogin legend{
+            background-color: white;
+            display: inline-block;
+            padding: 12px;
+            font-size: 22px;
+        }
+        
+        #user,#pass, .btn{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            border: none;
+            font-size: 18px;
+        }
+        #user, #pass{
+            background-color: #ddd;
+        }
+        #user:focus,#pass:focus{
+            background-color: white;
+        }
+        .btn{
+            margin-top: 15px;
+        }
+        #user{
+            margin-bottom: 15px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="#" method="post" class="formLogin">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">Digite o seu usuario</label>
+            <input type="text" id="user" name="user" autofocus>
+
+            <label for="pass">Digite a senha</label>
+            <input type="password" id="pass" name="pass">
+
+            <input type="submit" value="Logar" class="btn">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

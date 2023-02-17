@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos">
+    <meta name="description" content="Aplicações basicas para CSS">
+    <meta name="keywords" content="CSS, tecnologia">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        th{
+            background-color: rgb(206, 181, 181);
+            border: 2px solid chocolate;
+            padding: 14px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background-color: beige;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeito a alterações sem 
+                    aviso.</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InDesign</td>
+                <td>1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>Photoshop</td>
+                <td>1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>Ilustrator</td>
+                <td>1000,00</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Develop</td>
+                <td>HTML</td>
+                <td>1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>CSS</td>
+                <td>1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>Javascrpit</td>
+                <td>1000,00</td>
+            </tr>
+            <tr>
+                
+                <td>PHP</td>
+                <td>1000,00</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
