@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos">
+    <meta name="description" content="Aplicações basicas para CSS">
+    <meta name="keywords" content="CSS, tecnologia">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.8),transparent),
+            linear-gradient(to left bottom,blue,transparent),url(imagens/bg-1.jpg);/*cor inicial e cor final,
+            posso colocar as posições das cores e misturar com imagens. também posso cologar em graus usando
+            50deg, posso colocar a quantidadem em px ou % de gradiente de cada cor. blue 200px etc.*/
+            background-size: auto,100%,100%;
+        }
+        #radius{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+
+            border-radius: 50px 100px / 100px 50px; /*50% ou 100px a ideia
+            é o raio ser a metade do width para formar 
+            uma circunferencia perfeita. */
+            /*box-shadow: 10px 0 0 black;/*andou 10 para direita x, nada eixo y, 0 de
+            esfumaçamento na cor black*/
+            /*box-shadow: 10px -20px 10px black;/*deslocamento para baixo, eixo y,
+            valores negativos faz com que a sombra se desloque para cima. valores negativos
+            no eixo x, faz com que a sombra vá para esquerda */
+            /*box-shadow: 10px -20px 5px 10px black;/*O quarto valor é para aumentar ou
+            diminuir o tamanho da sombra.*/
+            box-shadow: 30px 0 10px -20px black, 10px 10px 0 red,
+            -5px -5px  0 10px blue;/*Aqui usei mais sobras*/
+        }
+        h1{
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: -1px -1px 0 #5d5d5d,-2px -2px 0 #5d5d5df1,
+            -3px -3px 0 #5d5d5dde,-4px -4px 0 #5d5d5db7,-5px -5px 0 #5d5d5d96;/*igual box-shadow
+             exeto aumento e diminuição da sombra. andando em 1px, para dar uma
+             impressão 3D*/
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS efeitos Box-Shadow</h1>
+    <div id="radius">
+
+    </div>
+</body>
+</html>
