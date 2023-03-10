@@ -9,8 +9,8 @@ body{
         max-width:100%;
     }
     .img-left{
-        display: inline-block;
-       /* float: left;*/
+        display: block;
+        float: left;
         margin-right: 15px;
         border-radius: 15px;
 
@@ -47,6 +47,7 @@ body{
     .ul-alternate li:last-child{
         border: 0;
     }
+
     .ul-icons{
         
         padding-left: 0;
@@ -87,6 +88,12 @@ body{
         margin: 2em 0;
         padding: .5em 0 .5em 1.5em;
     }
+    blockquote p{
+        margin-bottom: .5em;
+    }
+    blockquote p:last-child{
+        margin-bottom: 0;
+    }
     pre code{
         display: block;
     }
@@ -108,6 +115,14 @@ body{
     li{
         padding-left: .5em;
     } 
+    .hihhen{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        display: block;
+        
+    }
     textarea{
         height: 10em;
     }
@@ -273,8 +288,16 @@ body{
           
     }
     .copyright{
-       
         
+        list-style-type: none;
+        display: inline-block;
+        color: white;
+        width: 300px;
+                
+    }
+    .copyright li{
+        display: inline;
+        margin-left: 20px;
     }
     /*Grid*/
     .row{

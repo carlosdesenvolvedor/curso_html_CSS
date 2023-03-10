@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid red;
+            padding: 25px;
+            position: relative;
+            margin: 25px;
+        }
+        /*Before no começo e After no final.*/
+        div::before{/*Os texto colocados por aqui não são selecionaveis
+            nem reconhecidos pelos sistemas de busca como google, usar apenas para
+            questões visuais*/
+            content: "texto before";
+            background-color: #ccc;
+        }
+        div:after{
+          content: "";
+          background-color: red;
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Texto principal da div</div>
+ 
+    <article >
+        <p>pargrafo antes do titulo</p><br><br>
+        <h3>Titulo</h3> 7
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+        <li><a href="http://serfrontend.com/qq.pdf" target="_blank">link externo</a></li>
+        <li><a href="23_transition.html" title="veja exercicio anterior">link interno</a></li>
+    
+    </ul>
+    
+</body>
+</html>

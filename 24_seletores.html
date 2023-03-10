@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article:nth-child(1) a{/* toda teg a que é decendente de article, somente
+            o primeiro filho*/
+            color: red;
+        }
+        article:nth-child(3) > p{ /*selecionar todo paragrafo que é
+            filho direto do ariticle */
+            color: red;
+        }
+        article:nth-child(5) h3 + p{ /*Selecione o primeiro paragrafo que vem imediatamente
+            apos o h3*/
+            color: red;
+        }
+        article:nth-child(7) h3 ~ p{ /*Todos os irmão que vem depois de h3*/
+            color: orange;
+        }
+        article:not(.destaque){ /*menos o que possuir a classe destaque*/
+            color: orange;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+        /*Seletores de atributos*/
+        a[href="#"]{ /*Que contenha # para saber que o link é falso*/
+            opacity: .2;
+        }
+        a[href^="http"]{/*Que começa com*/
+            color: red;
+        }
+        a[title]{
+            color: green;
+        }
+        a[href$=".pdf"]{/*termina com "pdf" */
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <article> <!--2-->
+        <h3>Titulo</h3> 1
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    
+    <hr>
+    <article> <!--5-->
+        <h3>Titulo</h3> 3
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    <hr>
+    <article>
+        <h3>Titulo</h3> 5
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    <hr>
+    <article class="destaque">
+        <p>pargrafo antes do titulo</p><br><br>
+        <h3>Titulo</h3> 7
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+        <li><a href="http://serfrontend.com/qq.pdf" target="_blank">link externo</a></li>
+        <li><a href="23_transition.html" title="veja exercicio anterior">link interno</a></li>
+    
+    </ul>
+    
+</body>
+</html>
