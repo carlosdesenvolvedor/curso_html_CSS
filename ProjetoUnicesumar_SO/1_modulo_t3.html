@@ -57,141 +57,165 @@
               <a href="1_modulo_t1.html" class="button button-primary">Tópico 1</a>
               <a href="1_modulo_t2.html" class="button button-primary">Tópico 2</a>
               <a href="1_modulo_t3.html" class="button button-primary">Tópico 3</a>
+              <a href="1_modulo_t4.html" class="button button-primary">Tópico 4</a>
                 
                 <h3>INTRODUÇÃO</h3>
-                <h1>Definição de hardware, software e sistema operacional</h1>
-                <video width="95%" height="50%" controls="controls" src="img/EGRAD_ADSIS_202051_SISTEMAS_OPERACIONAIS_PARTE_1.mp4" ></video>
-            <p>Olá, caro(a) aluno(a)! Seja bem-vindo(a) ao estudo dos sistemas operacionais
-                (SO’s).
+                <h1 class="hero__title">PRINCIPAIS SISTEMAS OPERACIONAIS</h1>
+                <section id="parteVideo">
+                  <video class="video-screen" width="95%" height="50%" controls="controls" src="img/videoAula3.mp4" ></video>
+                </section>   
+            
                 
-   
-              </p>
-              <p>Nesta unidade iremos abordar as definições, tipos e os principais SO’s de
-                mercado.
-                Para definirmos sistema operacional (SO), precisamos relembrar as definições de hardware e software: <br></p>
-                <ul>
-                    <li>Hardware: parte física do computador. É tudo aquilo que pode ser tocado.
-                        Exemplo: teclado, mouse, monitor, gabinete, processador, memória entre
-                        outros.</li>
-                    <li>Software: parte lógica do computador. Ao contrário do hardware, esta
-                        parte não pode ser tocada. Também chamado de programa ou aplicativo.
-                        Exemplo: sistemas operacionais, processadores de textos, arquivos salvos, planilhas eletrônicas entre outros.
-                        </li>
-                </ul>
-                
-                
-                <p>Como acabamos de perceber, o sistema operacional é um software. Podemos
-                    considerá-lo como o software de maior importância para o bom funcionamento
-                    do computador, já que todos
-                    os outros aplicativos dependem do sistema operacional
-                    para funcionar.
-                    O sistema operacional
-                    atua na camada chamada
-                    modo núcleo, comunicando-se diretamente com o
-                    hardware. Os demais softwares atuam na camada
-                    modo usuário.</p>    
-                <img src="img/navegador.png" alt="">
-                <p>Podemos descrever a função do sistema operacional como:</p>
-                 <ul>
-                    <li>Gerenciar o uso dos componentes (hardware) de um computador, garantindo disponibilidade do hardware e armazenamento correto de dados.</li>
-                    <li>Fornecer uma camada de abstração para utilização e desenvolvimento
-                        de outros softwares.</li>
-                    <li>Fornecer uma interface de acesso para dispositivos com tecnologias distintas como USB e IDE.</li>
-                 </ul>   
-                <p> Não necessariamente um sistema operacional deve possuir interface gráfica com
-                    ícones e imagens coloridas. Em algumas situações o uso destas interfaces gráficas
-                    pode ser prejudicial ao bom desempenho do hardware, já que exigirá maior poder de processamento e controle do sistema operacional além da utilização de pessoas especializadas. Quando não há interfaces gráficas, utilizamos o termo <strong>shell</strong>.
-                </p>
-                <p>                            Para o uso doméstico aconselha-se o uso de sistemas operacionais com interfaces gráficas, também chamadas de GUI (Graphical User Interface), já que esta
-                    prática torna o uso do computador mais fácil e independente de pessoas especializadas em informática.</p>
-                
-                <p>Mas, afinal, quando começamos a utilizar sistemas operacionais nos computadores modernos?</p>
-                <p>            
-                    Você deve se lembrar das cinco gerações de computadores já estudadas. Na
-                    primeira geração (1945-1955) praticamente não tivemos sistemas operacionais,
-                    já que boa parte do trabalho realizado era manual, utilizando válvulas e necessitando de muitas pessoas para operá-lo. Podemos citar o ENIAC como exemplo
-                    de computador desta geração.</p>
-                <p>Na segunda geração (1955-1965), devido ao uso de transistores, os computadores tornaram-se mais confiáveis se comparados com as válvulas que geravam
-                    muito calor e queimavam facilmente. Nesta geração surgiram os computadores
-                    de grande porte, também chamados de mainframes. Muitos deles utilizavam à
-                    técnica de cartão perfurado para a inserção de instruções e foram criados pela
-                    empresa IBM.</p>    
-                <p>Os principais modelos de mainframes utilizados eram o 7094 e o 1401, ambos
-                    da IBM, e os sistemas operacionais mais utilizados eram o FMS (Fortran Monitor
-                    System) e o IBSYS, ambos desenvolvidos pela IBM para rodar no 7094. Estes sistemas operacionais são conhecidos como sistemas operacionais em lote (batch)
-                    e trabalhavam da seguinte maneira:</p>   
+              <a href="#parteVideo"><button onclick="tempo(30)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_1.png" alt=""  onclick="tempo(30)" >
+            </a>
+            <h2>Sistemas operacionais de computadores de grande porte</h2>
+            <p>
+              São computadores que ocupam uma sala inteira. Os sistemas operacionais são orientados a muitas tarefas com grande quantidade de troca de
+              dados (entrada/saída). Como exemplo de sistema operacional, podemos
+              citar o OS/390 da IBM, que é o descendente do OS/360 da terceira geração. Este sistema operacional tende a ter unicamente o modo shell, ou seja,
+              sem partição gráfica e somente desempenha tarefas do tipo lote (batch).</p>      
+              <a href="#parteVideo"><button onclick="tempo(53)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_2.png" alt=""  onclick="tempo(120)" >
+            </a>
+            <h2>Sistemas operacionais de servidores</h2>
+            <p>
+              Servidores são computadores de grande porte cuja função é prover determinados recursos computacionais (hardware e/ou software) e permitir que
+              múltiplos usuários tenham acesso aos recursos. Como exemplo, podemos
+              citar os servidores de impressão, de servidores de arquivos ou de web. </p>
+            <p>Os sistemas operacionais que melhor operam neste tipo de computadores
+              são o Solaris, FreeBSD, Linux e o Windows Server. Cabe a estes sistemas
+              operacionais prover a informação correta para o usuário que solicitou
+              e gerenciar as múltiplas requisições de recursos. Não necessariamente
+              estes sistemas operacionais operam em modo shell. Em alguns há a possibilidade do uso de interface gráfica, como no caso do Windows Server.</p>
+             
+            <a href="#parteVideo"><button onclick="tempo(120)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_3.png" alt=""  onclick="tempo(120)" >
+            </a> 
+           <h2>Sistemas operacionais de computadores pessoais</h2>
+           <p>
+            Um computador pessoal consiste no uso intenso da multiprogramação,
+            para não permitir a ociosidade do processador (CPU), e no uso de interface gráfica (GUI). Popularizaram-se a partir do IBM-PC (utilizando
+            Microsoft Windows) e do Apple Macintosh (utilizando Apple OS). São
+            utilizados em computadores do tipo desktop e notebooks, tanto em residências como em escritórios. Além do Windows e do Apple OS, temos
+            o Linux em suas diversas distribuições (Ubuntu, Slackware, Debian).</p>
+            <a href="#parteVideo"><button onclick="tempo(208)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_4.png" alt=""  onclick="tempo(208)" >
+            </a>   
+            <h2>Sistemas operacionais de multiprocessadores</h2>
+            <p>
+              Um sistema com multiprocessadores consiste na interligação de um conjunto de CPU’s (processadores), a fim de multiplicar ao máximo o poder
+              de processamento. Imagine dois computadores desktop com seus processadores e memórias trabalhando em conjunto. Com certeza o poder de
+              processamento irá ser dobrado. Este tipo de SO se assemelha aos sistemas
+              operacionais de computadores pessoais e os mais utilizados são o Linux
+              e o Windows. Cabe a estes sistemas operacionais coordenar o processamento entre todas as CPU’s e memórias para garantir o maior poder de
+              processamento. Atuam, em sua grande maioria, com interface gráfica.</p>
+           
+            <a href="#parteVideo"><button onclick="tempo(290)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_5.png" alt=""  onclick="tempo(290)" >
+            </a>  
+            <h2>Sistemas operacionais de computadores portáteis</h2>
+            <p>
+              Com o desenvolvimento da nanotecnologia, os computadores estão cada vez
+              menores. Podemos citar como precursor desta tecnologia portátil o computador do tipo PDA (Personal Digital Assistant) que era um pequeno computador
+              com um número limitado de funções. Ele era um computador de bolso e a
+              empresa referência neste tipo de produto é a PALM, utilizando o PALM OS.
+              Atualmente os PDA perderam espaço para os smatphones e tablets. O primeiro consiste em um aparelho celular com diversas funções e o segundo
+              consiste em um computador em formato de prancheta. As diversas funcionalidades destes dois aparelhos são ofertadas a partir do uso de um
+              sistema operacional. Os mais utilizados são o IO’s e Android. </p> 
+            <p>O sistema operacional IO’s somente é utilizado em aparelhos fabricados
+              pela Apple. Dentre estes aparelhos podemos citar o smartphone Iphone
+              e o tablet Ipad.
+              Todos estes sistemas operacionais possuem interface gráfica e são sensíveis ao toque (touchscreen), ou seja, não é necessário o uso de mouse, ou
+              teclado. Todas estas funcionalidades podem ser utilizadas com o toque
+              do dedo na tela do aparelho.</p>
+              
+            <a href="#parteVideo"><button onclick="tempo(354)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_6.png" alt=""  onclick="tempo(354)" >
+            </a>
+            <h2>Sistemas operacionais embarcados</h2>
+            <p>
+              Você já se perguntou como funcionam as smarts tvs? Ou então como funcionam os computadores de bordo de um carro? Ou então como funciona
+              um aparelho que reproduz músicas no formato MP3?
+              Boa parte destes produtos utiliza um software para funcionar e este
+              software necessita de um sistema operacional para ser executado.
+              Os sistemas operacionais do tipo embarcado são utilizados em aparelhos
+              que não são computadores e eles executam somente os softwares confiáveis para os produtos que foram produzidos. Tanto o sistema operacional
+              como o software a ser executado, está salvo em uma memória ROM.
+              Como exemplo de sistemas operacionais embarcados podemos citar o
+              QNX e o VxWorks.</p>
+            <a href="#parteVideo"><button onclick="tempo(424)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_7.png" alt=""  onclick="tempo(424)" >
+            </a>
+            <h2>Sistemas operacionais de nós sensores (sensor node)</h2>
+            <p>
+              Imagine que você possui uma fazenda com valiosas cabeças de gado e de
+              alguma maneira você precisa proteger o perímetro da sua fazenda. Você
+              pode adotar a estratégia de utilizar cercas elétricas e/ou contratar pessoas
+              para vigiarem o seu patrimônio. Ou então você utiliza sensores nesta tarefa.
+              Cada nó de sensor é um computador (com CPU, memória RAM e memória
+              ROM) e neles são utilizados sistemas operacionais que realizam a comunicação entre os nós garantindo a monitoria do perímetro. Caso algum
+              nó não esteja se comunicando ou foi violado, o sistema operacional emite
+              uma informação a central de monitoramento informando a infração ou
+              violação no perímetro. O sistema operacional mais conhecido é o TinyOS.</p>
+            <a href="#parteVideo"><button onclick="tempo(492)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_8.png" alt=""  onclick="tempo(492)" >
+            </a>
+            <h2>Sistemas operacionais de tempo real</h2>
+            <p>
+              Um sistema operacional de tempo real não necessariamente deve ser
+              ultrarrápido. Mas o seu comportamento perante o tempo é de fato o que
+              o diferencia das demais categorias. Este sistema operacional é utilizado
+              no controle de processos industriais, aviões e exército. Além disto, podemos encontrar sistemas operacionais de tempo real em sistemas de áudio
+              digital ou multimídia. Como exemplo, podemos citar o sistema operacional e-Cos.</p>
+            <a href="#parteVideo"><button onclick="tempo(562)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_9.png" alt=""  onclick="tempo(562)" >
+            </a>
+            <h2>Sistemas operacionais de cartões inteligentes (smart cards)</h2>
+            <p>
+              Você já parou para pensar como funcionam os cartões bancários que possuem chip? Estes cartões com chip são chamados de smart cards e cada
+              chip é considerado como uma CPU. A linguagem de programação Java
+              oferece um grande suporte a esta tecnologia permitindo a criação de programas para os smart cards.
+              Para que as aplicações Java funcionem, existe um interpretador para esta
+              linguagem. Chamamos este interpretador de JVM (Java Virtual Machine).
+              A JVM está instalada na memória ROM do chip e cabe a um sistema operacional bem primitivo do smart card ou a JVM coordenar os recursos
+              presentes na memória ROM e o uso da CPU. </p>
+            <a href="#parteVideo"><button onclick="tempo(646)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/topico3_10.png" alt=""  onclick="tempo(646)">
+              <img src="img/topico3_11.png" alt="" onclick="tempo(646)">
+            </a>     
 
-                <ul>
-                    <li> Havia uma entrada de dados, geralmente em cartões perfurados. Cada
-                        nova entrada era chamada de job.</li>
-                    <li>O job era processado, utilizando o máximo do processador e sem executar outra tarefa de leitura ou escrita. </li>
-                    <li>Após o processamento, os dados resultantes eram escritos em cartões perfurados ou impressos em tela ou em papel.</li>
-                </ul>
-                <p>Com o uso frequente destas máquinas foi percebido que enquanto os dados eram
-                    escritos, o processador ficava ocioso. Esta situação foi resolvida, com o uso da técnica de multiprogramação na terceira geração de computadores (1965-1980), ou
-                    seja, enquanto uma ação de entrada/saída era realizada, o processador poderia ser
-                    usado por outro job e quem deveria gerenciar este uso seria o sistema operacional.
-                    </p>
-                <p>    Além desta técnica, outro diferencial nos sistemas operacionais para computadores da terceira geração foi o uso da técnica SPOOL (Simultaneous Peripheral
-                    Operation On Line) e TIMESHARING.</p>
-                <p>O spool consiste em permitir que o processamento de um job fosse iniciado
-                    automaticamente quando outro job fosse finalizado. Cabe ao sistema operacional gerenciar o início da execução destes jobs.</p>
-                <p>O timesharing permitia que cada usuário pudesse se conectar por meio de
-                    um terminal on-line. Caso um usuário conectado não tivesse utilizando recursos do hardware, o mesmo era alocado para os usuários que estavam utilizando
-                    estes recursos, com isto permitia melhor tempo de resposta para processamento.
-                    </p>
-                <p>Podemos citar como exemplos de sistemas operacionais desta geração:</p>
-                <ul>
-                    <li>IBM OS/360, que era utilizado nos computadores modelo IBM 360.</li>
-                    <li>UNIX, tornou-se muito popular no mundo acadêmico, em agências governamentais e em empresas.</p>
-                    </li>
-                </ul>        
-                <p>
-                        <figcaption><img src="img/para_aula1.png" alt="" ><br> Figura: Painel de controle do IBM 360
-                     
-                        Fonte: http://www.columbia.edu/cu/computinghistory/36091.html </figcaption>
-                
-        
-                <p>A quarta geração (1980-atual) tornou os computadores cada vez menores e
-                    populares. Dentre os microcomputadores podemos citar os projetos IBM PC e
-                    Apple Lisa. O primeiro utilizou o sistema operacional MS-DOS (Disk Operating
-                    System - distribuído pela Microsoft), o qual utilizava somente a shell e teve grande
-                    sucesso no mercado. O computador Apple Lisa foi um fracasso, mas o fundador da Apple (Steve Jobs), não ficou abatido e na sua segunda tentativa, lançou
-                    o Apple Macintosh, este por sinal foi um sucesso comercial devido ao uso efetivo de uma interface gráfica (GUI), destinada a usuários que não sabiam nada
-                    sobre computadores.
-                   </p>        
-                <p> A partir deste momento, estava declarada a guerra entre Apple (Steve Jobs)
-                    e Microsoft (Bill Gates). </p>
-
-                <p>Com os microcomputadores foi possível ter um computador em casa e
-                    devido a nanotecnologia, cada vez mais os computadores estão ficando
-                    menores. Dentre estes computadores podemos citar os notebooks, ultrabooks, tablets e smartphones.
-               </p>
-               <p>Nas categorias smartphones e tablets, temos a existência de outros sistemas
-                operacionais em especial o IO’s e o Android. Estes sistemas operacionais serão
-                abordados com maiores detalhes logo a seguir.
-                </p>    
-                <p>     Nas categorias de computador pessoal (desktop), ultrabook e notebook,
-                        podemos citar o Apple OS X, Microsoft Windows e o Linux. Estes também serão
-                        detalhados logo a seguir.</p>
            
           </article>
-
+          <a href="1_modulo_t1.html" class="button button-primary">Tópico 1 </a>
+          <a href="1_modulo_t2.html" class="button button-primary">Tópico 2</a>
+          <a href="1_modulo_t3.html" class="button button-primary">Tópico 3</a>
+          <a href="1_modulo_t4.html" class="button button-primary">Tópico 4</a>
           
           </div>
         </section>
         
         
-        <
+        
 
         <div class="laptop-slider">            
           <div class="slideshow">
-            <figure><img alt="" src="img/para_aula1.png" width="700px" style="margin-left: 100px;"/></figure>
-            <figure><img alt="" src="img/articles/slid_1.png" /></figure>
-            <figure><img alt="" src="img/articles/slid2.png" /></figure>
-            <figure><img alt="" src="img/articles/slid3.png" /></figure>
-            <figure><img alt="" src="img/articles/slid4.png" /></figure>
-            <figure><img alt="" src="img/articles/slid5.png" /></figure>
+            <figure><img alt="" src="img/q5.png" width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q6.png" width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q7.png" width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q8.png" width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q9.png" width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q10.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q11.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q12.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q13.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q14.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q15.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q16.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q17.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q18.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q19.png"width="70%" style="margin-left: 5%;"/></figure>
+            <figure><img alt="" src="img/q20.png"width="70%" style="margin-left: 5%;"/></figure>
             <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
             <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
           </div>                    
@@ -263,6 +287,7 @@
         <script src="js/carousel.js"></script>
 
         <script src="js/main.js"></script>
+        <script src="js/video.js"></script>
 
     </body>
 </html>
