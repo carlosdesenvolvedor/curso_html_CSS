@@ -287,6 +287,7 @@ img{
     margin-right: 15px;
     display: inline-block;
     transition: background-color .5s;
+    
 }
 .button:hover{
     background-color: #929da5;
@@ -294,13 +295,19 @@ img{
 .button-primary{
     background-color: #69c6ae;
     color: white;
-    width: 10%;
+    width: 20%;
     margin-top: 10px;
     margin-bottom: 5px;
+    border-radius: 10px;
+
+    text-align: center;
+    
 }
 .button-secundary{
     background-color: #455357;
     color: white;
+    text-align: center;
+    border-radius: 10px;
 }
 
 
