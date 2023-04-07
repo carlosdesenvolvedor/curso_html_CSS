@@ -19,13 +19,14 @@ img{
     max-width: 980px;
 }
 li ul{
-    background-color: #ccc;
+    
+    
     height: 0;
     overflow: hidden;
-    transition: height 1s;
+    transition: height 1.5s;
 }
 li:hover ul{
-    height: 80px;
+    height: 540px;
 }
 
 .header{
