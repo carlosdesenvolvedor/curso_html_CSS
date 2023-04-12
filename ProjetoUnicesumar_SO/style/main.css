@@ -26,7 +26,7 @@ li ul{
     transition: height 1.5s;
 }
 li:hover ul{
-    height: 540px;
+    height: 200px;
 }
 
 .header{
@@ -88,7 +88,7 @@ li:hover ul{
     border: none;
     font-size: 14px;
 }
-
+/*Aqui começa Javascript*/
 .js .header__nav{
     transition: max-height 1s;
 }
@@ -117,6 +117,7 @@ li:hover ul{
     position: static;
     
 }
+
 .js .laptop-slider .prev, .js .laptop-slider .next{
     z-index: 3;
     position: absolute;
@@ -174,7 +175,7 @@ li:hover ul{
     right: 10px;
 }
 
-
+/*Aqui é meus heros*/
 .hero{
     height: 80vh;
     padding: 40px 20px;
@@ -192,20 +193,34 @@ li:hover ul{
 
 .hero__title{
     background-color: #155092;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.281);
     color: white;
-    
+    text-align: center;
     font-size: 28px;
     font-weight: 600;
     padding: 30px 20px;
     text-transform: uppercase;
+    border-radius: 10px;
 }
 
 .hero__text{
     background-color: #271907;
     margin: 5px 30px 35px;
     color: rgba(255, 255, 255, 0.664);
-    padding: 20px;
+    
+    text-align: center;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 16px;
+    
+    border-radius: 10px;
+    
+
+}
+.hero__text:last-child(2){
+   
 }
 
 .hero__btn{
@@ -219,6 +234,9 @@ li:hover ul{
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+}
+.hero__btn:hover{
+    background-color: #cccccc8a;
 }
 
 
@@ -287,6 +305,7 @@ li:hover ul{
     color: #929da5;
     font-size: 14px;
     word-spacing: 3px;
+    
 }
 .button{
     padding: 15px 40px;
@@ -413,7 +432,9 @@ li:hover ul{
     .header{
         position: fixed;
     }
-    
+    li:hover ul{
+        height: 80px;
+    }    
     .logo-text{
         width: 25%;
         box-sizing: border-box;
