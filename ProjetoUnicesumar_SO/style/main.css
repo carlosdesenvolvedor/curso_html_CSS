@@ -234,9 +234,10 @@ li:hover ul{
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .hero__btn:hover{
-    background-color: #cccccc8a;
+    background-color: #4d4444;
 }
 
 
