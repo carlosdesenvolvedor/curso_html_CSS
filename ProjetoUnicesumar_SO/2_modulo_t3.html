@@ -108,72 +108,93 @@
                 </ul>
                 <P>Abaixo ieremos estudar alguns destes algoritimos. </P>
                   <hr>
-                <a href="#parteVideo"><button onclick="tempo(22)"  class="button-secundary">Ir para trexo da aula</button>  
-                  <img src="img/u2_t3_1.png" alt=""  onclick="tempo(22)" >
+                <a href="#parteVideo"><button onclick="tempo(130)"  class="button-secundary">Ir para trexo da aula</button>  
+                  <img src="img/u2_t3_1.png" alt=""  onclick="tempo(130)" >
                 </a>
                 <hr>
-            <h2>COMUNICAÇÃO ENTRE PROCESSOS</h2>    
-              <p>Você já deve ter percebido que os processos de alguma maneira têm que se
-                comunicar com outros processos (Word e gerenciador de impressão no exemplo acima). Cabe ao sistema operacional garantir esta comunicação de forma
-                bem estruturada e sem interrupções. </p>
-              <p>Caso haja alguma falha na comunicação, existe a possibilidade de concorrência entre os processos ou threads. Se isto ocorrer temos a situação denominada
-                condição de corrida. Nesta situação, diferentes processos ou threads em execução
-                dependem de um estado compartilhado e o resultado desta execução depende
-                do escalonamento de processo (assunto que será abordado logo em seguida). </p>
-              <p>Imaginemos que dois processos distintos estão solicitando o uso de um
-                determinado arquivo ao mesmo tempo. O resultado desta disputa (condição de
-                corrida) será uma catastrófica corrupção dos dados do arquivo. </p>
-              <p>Mas como evitar estas condições de disputa entre os processos e threads?
-                Todo processo precisa de um espaço em memória durante a sua execução e
-                um pedaço desta memória é compartilhado entre outros processos. Este compartilhamento é chamado de região crítica. A melhor maneira para que não ocorra
-                condição de corrida é realizando a exclusão mútua. Nesta técnica os processos
-                são impedidos de acessar uma variável ou arquivo compartilhado na região crítica e que já esteja em uso por outro processo.</p>
-                            <hr>
-            <a href="#parteVideo"><button onclick="tempo(17)"  class="button-secundary">Ir para trexo da aula</button>  
-              <img src="img/imagens9.png" alt=""  onclick="tempo(17)" >
-            </a>
-            <p>Tanenbaum (2010, p. 71) define que uma boa solução de exclusão mútua
-              deve atender os seguintes critérios:</p>
-            <ul>
-              <li>Dois processos nunca podem estar simultaneamente em suas regiões
-                críticas</li>
-              <li>Nada pode ser afirmado sobre a velocidade ou sobre o número de CPUs.</li>
-              <li>Nenhum processo executando fora de sua região crítica pode bloquear
-                outros processos.</li>
-              <li>Nenhum processo deve esperar eternamente para entrar em sua região
-                crítica.</li>
-
-            </ul>
-            <p>Iremos estudar uma série de técnicas que foram desenvolvidas para que o sistema
-              operacional pudesse gerenciar corretamente a comunicação entre os processos.
-              Iremos começar das mais simples para as mais complexas.</p>
-                        
+                <a href="#parteVideo"><button onclick="tempo(269)"  class="button-secundary">Ir para trexo da aula</button>  
+                  <img src="img/u2_t3_2.png" alt=""  onclick="tempo(269)" >
+                </a>
+                <hr>
+                <a href="#parteVideo"><button onclick="tempo(295)"  class="button-secundary">Ir para trexo da aula</button>  
+                  <img src="img/u2_t3_3.png" alt=""  onclick="tempo(295)" >
+                </a>
+ 
+                <a href="#parteVideo"><button onclick="tempo(356)"  class="button-secundary">Ir para trexo da aula</button>  
+                  <img src="img/u2_t3_4.png" alt=""  onclick="tempo(356)" >
+                </a>
+                <hr>
+                <h2>PRIMEIRO A CHEGAR, PRIMEIRO A SER SERVIDO</h2>
+                <p>É o mais simples dos algoritmos de escalonamento. Também chamado de FCFS
+                  (first come, first served). Neste algoritmo, o processo que solicitar a CPU por primeiro é o que vai usá-la. Quando o processo é finalizado, o próximo processo
+                  da fila será escalonado para o processamento. Este algoritmo é muito comum
+                  em sistemas operacionais de computadores de grande porte com processamento
+                  em lote (batch jobs).</p>
+                <p>Uma desvantagem deste algoritmo é quando na fila existem dois processos de tamanhos distintos e o maior deles é processado por primeiro. O
+                  segundo processo ficará aguardando um bom tempo até que o primeiro processo seja finalizado. Com isto, o usuário que solicitou o segundo processo
+                  terá que ficar aguardando.</p>
+               
             <hr>
-            <a href="#parteVideo"><button onclick="tempo(108)"  class="button-secundary">Ir para trexo da aula</button>  
-              <img src="img/u2_t2_2.png" alt=""  onclick="tempo(108)" >
+            <a href="#parteVideo"><button onclick="tempo(370)"  class="button-secundary">Ir para trexo da aula</button>  
+              <img src="img/u2_t3_5.png" alt=""  onclick="tempo(370)" >
             </a>
-            <hr>
-            <a href="#parteVideo"><button onclick="tempo(194)"  class="button-secundary">Ir para trexo da aula</button>  
-              <img src="img/u2_t2_4.png" alt=""  onclick="tempo(194)" >
-            </a>
-            <hr>
-            <a href="#parteVideo"><button onclick="tempo(263)"  class="button-secundary">Ir para trexo da aula</button>  
-              <img src="img/u2_t2_5.png" alt=""  onclick="tempo(263)" >
-            </a>
-            <hr>
-            <h2>Desabilitar interrupções</h2>
-            <p>Para que um processo seja executado na CPU, o sistema operacional emite um
-              sinal de interrupção. O objetivo desta abordagem é impedir o uso de CPU por
-              outro processo até que o processamento fosse concluído. Quando o processo estivesse utilizando a região crítica, eram desabilitadas as chamadas de interrupções
-              e ao fim do processamento, as interrupções eram habilitadas. </p>
-            <p>Esta abordagem não é interessante, pois um processo do usuário poderia ter
-              mais prioridade que um processo que o sistema operacional criou. Além disto,
-              esta abordagem só funciona quando o computador possui uma única CPU</p>   
-                          <hr>
-            <a href="#parteVideo"><button onclick="tempo(263)"  class="button-secundary">Ir para trexo da aula</button>  
-              <img src="img/u2_tx_6.png" alt=""  onclick="tempo(263)" >
-            </a>
-            <hr>
+          <hr>
+          <h2>TAREFA MAIS CURTA PRIMEIRO</h2>
+          <p>Conhecido como algoritmo SJF (shortest job first). Quando existem várias tarefas igualmente importantes à espera de uso da CPU, o escalonador decide por
+            executar a tarefa mais curta primeiro. </p>
+          <p>Este algoritmo também é comum em sistemas operacionais de grande porte
+            (batch jobs), mas também pode ser utilizado em sistemas operacionais multitarefas (como os de computadores pessoais). A restrição desde algoritmo é que todas
+            as tarefas estejam simultaneamente disponíveis para serem usadas pela CPU.</p>
+          <hr>
+          <a href="#parteVideo"><button onclick="tempo(407)"  class="button-secundary">Ir para trexo da aula</button>  
+            <img src="img/u2_t3_6.png" alt=""  onclick="tempo(407)" >
+          </a>
+        <hr>
+        <h2>PRÓXIMO DE MENOR TEMPO RESTANTE</h2>
+        <p>É muito semelhante à tarefa mais curta primeiro, mas em uma versão preemptiva (envolvendo tempo máximo fixado). Neste algoritmo, o tempo de execução
+          de cada processo deve ser previamente conhecido e o escalonador irá decidir
+          pelo que levará menos tempo para ser finalizado.</p>
+        
+        <hr>
+        <a href="#parteVideo"><button onclick="tempo(448)"  class="button-secundary">Ir para trexo da aula</button>  
+          <img src="img/u2_t3_7.png" alt=""  onclick="tempo(448)" >
+        </a>
+      <hr>
+      <h2>CHAVEAMENTO CIRCULAR (ROUND-ROBIN)</h2>
+      <p>Este algoritmo é semelhante ao FCFS, mas com a adição de preempção para
+        permitir que o sistema alterne entre os processos não gerando um tempo de
+        espera excessivo para o usuário. Em cada processo é atribuída uma unidade
+        de tempo denominada quantum, que representará o tempo que o processo
+        terá para o processamento. </p>
+      <p>Quando é chegado ao final do quantum, a CPU é chaveada para outro processo. Caso o processo não tenha chegado ao seu fim, o mesmo ficará com estado
+        bloqueado e voltará a ser processado quando chegar a sua vez novamente e ter
+        decorrido o quantum dos demais processos.</p>
+      <p>Com esta técnica os processos na fila são atendidos de pouco em pouco.
+        Como as atuais CPUs são muito rápidas, o usuário tem a falsa sensação que múltiplas tarefas ocorrem ao mesmo tempo.</p>
+      <hr>
+      <a href="#parteVideo"><button onclick="tempo(482)"  class="button-secundary">Ir para trexo da aula</button>  
+        <img src="img/u2_t3_8.png" alt=""  onclick="tempo(482)" >
+      </a>
+    <hr>
+    <h2>ESCALONAMENTO POR PRIORIDADE</h2>
+    <p>O chaveamento circular trata todos os processos de forma igual, mas em algumas situações alguns processos são mais importantes que outros e obedecendo estes critérios de prioridades, o sistema operacional pode decidir de maneira
+      diferente a forma como escalonar</p>
+    <p>Estas prioridades podem ser adicionadas interna e externamente. Caso você
+      utilize Windows, abra o gerenciador de tarefas (pressione simultaneamente
+      CTRL+ALT+DEL) e clique na aba PROCESSOS. Clique com o botão direito
+      em qualquer processo e selecione DEFINIR PRIORIDADE (conforme mostra
+      a figura abaixo). Perceba os níveis de prioridade existentes. Isto irá interferir em
+      como o escalonador irá trabalhar.</p>
+    <hr>
+    <img src="img/u2_t3_10.png" alt="">
+    <hr>
+      <a href="#parteVideo"><button onclick="tempo(518)"  class="button-secundary">Ir para trexo da aula</button>  
+        <img src="img/u2_t3_9.png" alt=""  onclick="tempo(518)" >
+      </a>
+  <hr>
+  <a href="#parteVideo"><button onclick="tempo(568)"  class="button-secundary">Ir para trexo da aula</button>  
+    <img src="img/u2_t3_11.png" alt=""  onclick="tempo(568)" >
+  </a>
           </article>
           <a href="1_modulo_t1.html" class="button button-primary">Tópico 1 </a>
           <a href="1_modulo_t2.html" class="button button-primary">Tópico 2</a>
