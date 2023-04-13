@@ -490,6 +490,17 @@ li:hover ul{
     .footer .container > * {
         margin: 1.5em;
     }
+    .button-primary{
+        background-color: #69c6ae;
+        color: white;
+        width: 40%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    
+        text-align: center;
+        
+    }
 }
 
 
